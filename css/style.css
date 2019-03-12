@@ -1,0 +1,229 @@
+/* Container items */
+.header { grid-area: header; padding: 20px; }
+.menu { grid-area: menu; padding: 10px; background-color: whitesmoke; }
+.main { grid-area: main; }
+.mainSecond { grid-area: mainSecond; margin-top: 100px; }
+.mainThird { grid-area: mainThird; margin-top: 100px; }
+
+
+/* Header items */
+.item5 {grid-area: baner;}
+.item6 {grid-area: search; width: 100%;}
+.item7 {grid-area: headerButton1;}
+.item8 {grid-area: headerButton2;}
+.item9 {grid-area: headerButton3;}
+
+/* Menu items */
+.item10 {grid-area: first;}
+.item11 {grid-area: second;}
+.item12 {grid-area: third;}
+.item13 {grid-area: fourth;}
+
+/* Menu items hover */
+.item10:hover, .item11:hover, .item12:hover, .item13:hover{
+    color:gray;
+    border-radius: 4px;
+}
+
+/* Second menu items */
+.secondMainOne, .secondMainTwo, .secondMainThree{
+    color:white;
+    padding: 100px 0px;
+    min-width: 250px;
+    text-align: center;
+    white-space: nowrap;
+    background-color: red;
+}
+
+/* Second menu items hover */
+.secondMainOne:hover, .secondMainTwo:hover, .secondMainThree:hover{
+    color:black;
+}
+
+/* Third main top items */
+.thirdMainTop{
+    background-color: red;
+    color: white;
+    font-size: 63px;
+    font-weight: lighter;
+    text-align: center;
+}
+/* Third main bottom items */
+.thirdMainBottom{
+    display: grid;
+    grid-template-areas:
+                'thirdMainBottomLeft thirdMainBottomRight thirdMainBottomRight thirdMainBottomRight';
+    background: url("../img/mainThirdImage.jpg") fixed 50% 50%;
+    padding: 30px 70px;
+}
+
+.thirdMainBottomLeft{
+
+}
+.thirdMainBottomRight{
+    text-shadow: 3px 3px 1px black;
+    margin-top: 30px;
+    color:white;
+    font-size: 54px;
+    font-weight: lighter;
+}
+
+
+/* Container */
+.wrapper {
+    max-width: 90%;
+    min-width: 50%;
+    margin: 0 auto;
+}
+
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+            'header header header header header header'
+            'menu menu menu menu menu menu '
+            'main main main main main main '
+            'mainSecond mainSecond mainSecond mainSecond mainSecond mainSecond'
+            'mainThird mainThird mainThird mainThird mainThird mainThird '
+            'flex-footer flex-footer flex-footer flex-footer flex-footer flex-footer ';
+}
+
+/* Grid header */
+.grid-header{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+            'baner  search search search search search search search search search search search search search headerButton1 headerButton2 headerButton3';
+}
+
+/* Grid menu*/
+.grid-menu{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+            'first second third fourth';
+}
+
+/* Grid secondMenu */
+.grid-secondMain{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+            'secondMainOne secondMainTwo secondMainThree';
+}
+
+/* Grid thirdMenu */
+.grid-thirdMain{
+    display: grid;
+    grid-template-areas:
+            'thirdMainTop'
+            'thirdMainBottom'
+;
+}
+
+.flex-footer{
+    background-color: whitesmoke;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 100px;
+    display: flex;
+    grid-area: flex-footer;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    font-weight: lighter;
+}
+
+.flex-footer > div{
+    padding: 10px;
+}
+
+
+.copyright{
+    margin-left: 100px;
+}
+
+/* unvisited link */
+a:link, a:visited, a:active  {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* mouse over link */
+.flex-footer > div > a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+
+.menuOne, .menuTwo, .menuThree, .menuFour{
+    display: none;
+    padding: 0px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ********** */
+/* ********** */
+/* Google icons  */
+.material-icons {
+    vertical-align: -4px; /* Vertical align of icon */
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.material-icons.red { color: lightcoral; }
+/* ********** */
+/* ********** */
+
+
+@media only screen and (max-width: 600px) {
+
+}
+
